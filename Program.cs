@@ -11,7 +11,7 @@ namespace TelegramBot
     class Program
     {
         // Start the BotClient
-        static TelegramBotClient Bot = new TelegramBotClient("1616770898:AAGdC_QpIZo08nww11q_PQAZgaPoR3k-2ec");
+        static TelegramBotClient Bot = new TelegramBotClient("...InsertTokenHere...");
         static void Main(string[] args)
         {
             Bot.StartReceiving();
@@ -34,7 +34,7 @@ namespace TelegramBot
             }
 
             //waits certan time and run the code "SendTextMessageAsync"
-            Task.Delay(ts).ContinueWith((x) => Bot.SendTextMessageAsync("-1001446884829", "Pole"));
+            Task.Delay(ts).ContinueWith((x) => Bot.SendTextMessageAsync("...InsertChatIdHere...", "Pole"));
 
             Console.Read();
 
