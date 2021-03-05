@@ -36,8 +36,7 @@ namespace TelegramBot
             //waits certan time and run the code "SendTextMessageAsync"
             Task.Delay(ts).ContinueWith((x) => Bot.SendTextMessageAsync("...InsertChatIdHere...", "Pole"));
 
-            Console.Read();
-
+          
             Console.ReadLine();
         }
 
